@@ -1,0 +1,133 @@
+:root {
+    --colors-blue-dark: #14131B;
+    --colors-blue-mid: #182335;
+    --colors-blue-ligth: #14131B;
+    --colors-gray-mid: #1F1E24;
+    --colors-yellow-mid: #E4D804;
+    --colors-yellow-dark: #aca416;
+    --colors-green-mid: #00FF00;
+    --colors-black: #000000;
+    --colors-grey-100: #E1E1E6;
+    --colors-grey-200: #C4C4CC;
+    --colors-grey-300: #8D8D99;
+    --colors-grey-400: #7C7C8A;
+    --colors-grey-500: #505059;
+    --colors-grey-600: #323238;
+    --colors-grey-700: #29292E;
+    --colors-grey-800: #202024;
+    --colors-grey-900: #222230;
+    --colors-grey-950: #191923;
+}
+
+
+@media (max-width: 955px) {
+    .poster-trailer {
+        flex-direction: column;
+        position: relative;
+    }
+
+    .poster-trailer .movie-poster {
+        display: flex;
+        justify-content: center;
+    }
+
+    .movie-infos {
+        width: 100%;
+        padding: 0 30px;
+    }
+    
+    .movie-trailer {
+        width: 100%;
+        padding: 20px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 750px) {
+    .container {
+        padding: 30px;
+    }
+
+    #categorias-list {
+        display: none;
+        position: fixed;
+        flex-direction: column;
+        background-color: var(--colors-blue-ligth);
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        padding: 90px;
+    }
+    
+    .hamburger {
+        display: block;
+    }
+
+    .movie-row {
+        flex-wrap: wrap;
+    }
+
+    .infos-movie .movie-categories {
+        flex-wrap: wrap;
+    }
+
+    .infos-movie .movie-categories li, .infos-movie .movie-categories a {
+        width: min-content;
+    }
+
+    .title-movie .overall-average {
+        display: none;
+    }
+
+    .movie-poster .imagem-container .vote-average {
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 20px 5px;
+        text-align: center;
+        width: max-content;
+        display: block;
+    }    
+
+    .comments .user-ratings {
+        flex-direction: column;
+    }
+
+    .comments .infos-ratings {
+        width: 100%;
+    }
+
+    .movie-infos .description-movie {
+        font-size: 16px;
+    }
+
+    .movie-infos .movie-title {
+        font-size: 24px;
+    }
+
+    .infos-movie .movie-categories li, .infos-movie .movie-categories a {
+        height: max-content;
+        padding: 5px;
+    }
+
+    .list-actors {
+        gap: 10px;
+    }
+
+    .commentsDiv {
+        width: 100%;
+    }
+}
+
+@media (max-width: 760px){
+    .swiper-button-next {
+        right: 20px;
+        transform: none;
+    }
+
+    .swiper-button-prev {
+        left: 20px;
+        transform: none;
+    }
+}
