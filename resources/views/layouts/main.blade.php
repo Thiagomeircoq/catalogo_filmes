@@ -69,12 +69,6 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="">
-                                            <i class="fa-solid fa-list"></i>
-                                           <p>Listas</p>
-                                        </a>
-                                    </li>
-                                    <li>
                                         <form action="/logout" method="POST">
                                             @csrf
                                             <a href="/logout" 

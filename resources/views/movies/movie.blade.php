@@ -27,7 +27,7 @@
             <ul class="categorias-movie">
                 <span>Generos: </span>
                 @foreach ($movie['genres'] as $categoria)
-                    <li><a href="">{{ $categoria['name'] }}</a></li>
+                    <li><a href="/movies/category/{{ $categoria['id'] }}">{{ $categoria['name'] }}</a></li>
                 @endforeach
             </ul>
             <div class="buttons">
@@ -68,7 +68,6 @@
                         </div>
                         <div class="movie-row">
                             <div class="movies-actions">
-                                <button class="buttons-action" title="Lista"><i class="fa-solid fa-list"></i></button>
                                 <div id="favorite-buttons">
                                     <button class="buttons-action" type="submit" id="button-favorite" title="Favorito">
                                         <i class="fa-regular fa-heart" id="iconFavorito"></i>
@@ -77,7 +76,7 @@
                             </div>
                             <div class="movie-categories">
                                 @foreach ($movie['genres'] as $categoria)
-                                    <li><a href="">{{ $categoria['name'] }}</a></li>
+                                    <li><a href="/movies/category/{{ $categoria['id'] }}">{{ $categoria['name'] }}</a></li>
                                 @endforeach
                             </div>
                         </div>
